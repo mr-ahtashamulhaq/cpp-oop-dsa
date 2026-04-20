@@ -64,7 +64,8 @@ public:
     while (outer != NULL) {
       Node *inner = outer;
 
-      while (inner->next != NULL) {
+      while (inner->next != NULL)
+      {
         if (inner->next->data == outer->data)
           inner->next = inner->next->next;
         else
